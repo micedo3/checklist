@@ -1,16 +1,18 @@
-.wrapper{
+.app{
     width: 700px;
     background-color: lightgray;
     margin: 2% auto;
     border-radius:  20px;
-    padding: 40px 60px;
+    padding: 40px 60px 40px 40px;
+    display: grid;
+    grid-template-rows: 70px 621px;
 }
-.header{
+.app__controls{
     display: flex;
 
 }
 
-.header-input{
+.app__controls__input{
     height: 70px;
     width: 75%;
     background-color: white;
@@ -21,7 +23,7 @@
     padding-left: 5%;
     font-size: 20px;
 }
-.buttonh{
+.app__controls__button{
     border: none;
     height: 72px;
     width: 25%;
@@ -29,14 +31,15 @@
     background-color: goldenrod;
     cursor: pointer;
 }
-.items{
+.app__list{
     margin-top: 20px;
-    height: 600px;
+    height: 90%;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
+    overflow-y: auto;
 }
-.item-undone{
+.app__list__item{
     background-color: lightcoral;
     height: 50px;
     border-radius: 20px;
@@ -47,7 +50,7 @@
     margin-bottom: 10px;
     
 }
-.item-done{
+.app__list__item_done{
     background-color: lightgreen;
     height: 50px;
     border-radius: 20px;
@@ -61,23 +64,13 @@
 input[type="checkbox"] {
     transform: scale(2);
 }
-.items-text{
-    width: 80%;
+.app__list__item__text{
+    width: 100%;
     font-size: 20px;
 }
-.bin{
+.app__list__item__icon{
     cursor: pointer;
+    width: 100px;
+    background: none;
+    border: none;
 }
-
-
-/* app {
-
-app__controls
-
-app__list {
-    app__list-item {
-
-    }
-    app__list-item_done
-}
- */

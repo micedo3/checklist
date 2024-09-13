@@ -7,23 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-                <input class="header-input">
-                <button class="buttonh">Добавить</button>
+    <div class="app">
+        <div class="app__controls">
+                <input class="app__controls__input">
+                <button class="app__controls__button">Добавить</button>
 
         </div>
-        <div class="items">
-            <div class="A">
-                <input type="checkbox" >
-                <div class="items-text"> some task to do</div>
-                <img class="bin" src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" width="8%">
+        <div class="app__list">
+            <div class="app__list__item">
+                <input type="checkbox" id="boxcheck">
+                <label for="boxcheck" class="app__list__item__text"> some task to do</label>
+                <button class="app__list__item__icon"><img src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" width="100%"></button>
             </div>
-            <div class="B">
-                <input type="checkbox" checked="true" >
-                <div class="items-text"> some task to do</div>
-                <img class="bin" src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" width="8%">
+            <div class="app__list__item_done">
+                <input type="checkbox" checked="true" id="boxcheck-done" >
+                <label for="boxcheck-done" class="app__list__item__text"> some task to do</label>
+                <button class="app__list__item__icon"><img src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" width="100%"></button>
             </div>
+
         </div>
     </div>
 </body>
