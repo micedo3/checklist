@@ -9,22 +9,13 @@
 <body>
     <div class="app">
         <div class="app__controls">
-                <input class="app__controls__input">
-                <button class="app__controls__button">Добавить</button>
+                <input class="app__controls__input" id = 'textbox'>
+                <button class="app__controls__button" id = 'mainbutton'>Добавить</button>
 
         </div>
-        <div class="app__list">
-            <div class="app__list__item">
-                <input type="checkbox" id="boxcheck">
-                <label for="boxcheck" class="app__list__item__text"> some task to do</label>
-                <button class="app__list__item__icon"><img src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" width="100%"></button>
-            </div>
-            <div class="app__list__item_done">
-                <input type="checkbox" checked="true" id="boxcheck-done" >
-                <label for="boxcheck-done" class="app__list__item__text"> some task to do</label>
-                <button class="app__list__item__icon"><img src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" width="100%"></button>
-            </div>
-
+        <div class="app__list" id="mylist">
+            <script src="/javascript.js"></script>
+           
         </div>
     </div>
 </body>
